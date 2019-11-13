@@ -72,3 +72,28 @@ Label.create!(
         }
     ]
 )
+#<レビュー>
+Review.create!(
+    [
+        {
+            ID: "1",
+            user_id: "1",
+            item_id: "1",
+            review_title: "良かったよーん",
+            review_content: "感動しすぎて頭がおかしくなりました。とてもいい曲です",
+            satisfaction: "5",
+            create_at: "2019-11-11 08:00:00",
+            update_at: "", 
+        },
+        {
+            ID: "2",
+            user_id: "1",
+            item_id: "1",
+            review_title: "悪かったよーん",
+            review_content: "うるさすぎて頭がおかしくなりました。とてもわるい曲です",
+            satisfaction: "1",
+            create_at: "2019-11-11 08:00:00",
+            update_at: "",
+        }
+    ]
+)
