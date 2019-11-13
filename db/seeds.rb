@@ -45,7 +45,48 @@ User.create!(
       delete_flag: "0",
       created_at: "2017-10-06 08:25:00",
       updated_at: ""
-    },
+    }
   ]
 )
 # --------------------------------------------------------
+#＜届け先＞
+User.create!(
+  [
+    {
+      ID: "1",
+      user_id: "1",
+      delivery_name_family_kanji: "橋下",
+      delivery_name_first_kanji: "三郎",
+      delivery_name_family_furigana: "ハシモト"
+      delivery_name_first_furigana: "サブロウ",
+      delivery_postal_code: "000-0000",
+      delivery_address_prefecture: "北海道",
+      delivery_address_city: "テスト市",
+      delivery_address_number: "テスト3-3-3",
+      delivery_address_building: "テストビル",
+      order_status: "0",
+      total_fee: "2500",
+      postage: "500",
+      created_at: "2017-10-07 08:25:00",
+      updated_at: ""
+    },
+    {
+      ID: "2",
+      user_id: "1",
+      delivery_name_family_kanji: "高橋",
+      delivery_name_first_kanji: "四郎",
+      delivery_name_family_furigana: "タカハシ"
+      delivery_name_first_furigana: "シロウ",
+      delivery_postal_code: "123-4567",
+      delivery_address_prefecture: "北海道",
+      delivery_address_city: "DMM市",
+      delivery_address_number: "090-1111-2222",
+      delivery_address_building: "DMM",
+      order_status: "0",
+      total_fee: "1500",
+      postage: "500",
+      created_at: "2017-10-07 08:25:00",
+      updated_at: ""
+    }
+  ]
+)
