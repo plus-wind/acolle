@@ -50,7 +50,7 @@ User.create!(
 )
 # --------------------------------------------------------
 #＜届け先＞
-User.create!(
+Order.create!(
   [
     {
       ID: "1",
@@ -85,6 +85,31 @@ User.create!(
       order_status: "0",
       total_fee: "1500",
       postage: "500",
+      created_at: "2017-10-07 08:25:00",
+      updated_at: ""
+    }
+  ]
+)
+
+# --------------------------------------------------------
+#＜order_items＞
+Order_item.create!(
+  [
+    {
+      ID: "1",
+      order_id: "1",
+      item_id: "1",
+      order_price: "2000"
+      order_number: "1"
+      created_at: "2017-10-07 08:25:00",
+      updated_at: ""
+    },
+    {
+      ID: "2",
+      order_id: "2",
+      item_id: "2",
+      order_price: "3000"
+      order_number: "1"
       created_at: "2017-10-07 08:25:00",
       updated_at: ""
     }
