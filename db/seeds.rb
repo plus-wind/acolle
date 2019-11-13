@@ -115,3 +115,62 @@ Order_item.create!(
     }
   ]
 )
+
+# --------------------------------------------------------
+#＜carts＞
+Cart.create!(
+  [
+    {
+      ID: "1",
+      user_id: "1",
+      item_id: "1",
+      cart_item_number: "2",
+      created_at: "2017-10-07 08:25:00",
+      updated_at: ""
+    },
+    {
+      ID: "2",
+      user_id: "2",
+      item_id: "2",
+      cart_item_number: "3",
+      created_at: "2017-10-08 08:25:00",
+      updated_at: ""
+    }
+  ]
+)
+#################################################
+# address追加
+Address.create!(
+  [
+    {
+      ID: "1",
+      user_id: "1",
+      delivery_name_family_kanji: "橋下",
+      delivery_name_first_kanji: "三郎",
+      delivery_name_family_furigana: "ハシモト"
+      delivery_name_first_furigana: "サブロウ",
+      delivery_postal_code: "000-0000",
+      delivery_address_prefecture: "北海道",
+      delivery_address_city: "テスト市",
+      delivery_address_number: "テスト3-3-3",
+      delivery_address_building: "テストビル",
+      create_at: "2017-10-08 08:25:00",
+      update_at: ""
+    },
+    {
+      ID: "2",
+      user_id: "1",
+      delivery_name_family_kanji: "高橋",
+      delivery_name_first_kanji: "四郎",
+      delivery_name_family_furigana: "タカハシ"
+      delivery_name_first_furigana: "シロウ",
+      delivery_postal_code: "123-4567",
+      delivery_address_prefecture: "北海道",
+      delivery_address_city: "DMM市",
+      delivery_address_number: "090-1111-2222",
+      delivery_address_building: "DMM",
+      create_at: "2017-10-08 08:25:00",
+      update_at: ""
+    }
+  ]
+)
