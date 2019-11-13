@@ -6,7 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
+# --------------------------------------------------------
+#＜ユーザ情報＞
 User.create!(
   [
     {
@@ -47,3 +48,4 @@ User.create!(
     },
   ]
 )
+# --------------------------------------------------------
