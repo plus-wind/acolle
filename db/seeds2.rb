@@ -5,19 +5,19 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
-Admin.create!(adimin_id:  "1",
+#<管理者>
+Admin.create!(ID:  "1",
              email: "admin@example.jp",
              password:  "11111111",
              password_confirmation: "11111111",
              create_at: "2019-11-11",
              update_at: "",
              admin: true)
-
+ #<お問い合わせ>
 Contact.create!(
             [
                 {
-                    contact_id: "1",
+                    ID: "1",
                     user_id: "1",
                     category: "0",
                     contact_status: "0",
@@ -26,7 +26,7 @@ Contact.create!(
                     update_at: "",
                 },
                 {
-                    contact_id: "2",
+                    ID: "2",
                     user_id: "1",
                     category: "1",
                     contact_status: "0",
@@ -37,3 +37,38 @@ Contact.create!(
                 }
             ]
             )
+#<アーティスト>
+Artist.create! (
+        [
+            {
+                ID: "1",
+                artist_name: "あああああ",
+                create_at: "2019-11-11 08:00:00",
+                update_at: "",
+
+        },
+        {
+            ID: "2",
+            artist_name: "ファイト一発",
+            create_at: "2019-11-11 08:00:00",
+            update_at: "", 
+        }
+        ]
+)
+#<レーベル>
+Label.create!(
+    [
+        {
+            ID: "1",
+            label_name: "ソニーミュージック",
+            create_at: "2019-11-11 08:00:00",
+            update_at: "", 
+        },
+        {
+            ID: "2",
+            label_name: "カニーミュージック",
+            create_at: "2019-11-11 08:00:00",
+            update_at: "", 
+        }
+    ]
+)
