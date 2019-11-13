@@ -12,8 +12,21 @@ Admin.create!(adimin_id:  "1",
              password_confirmation: "11111111",
              admin: true)
 
-Contact.create!(contact_id: "1",
-                user_id: "1",
-                category: "0",
-                contact_status: "0",
-                text: "You're rock!! cancel that !!!!!!")
+Contact.create!(
+            [
+                {
+                    contact_id: "1",
+                    user_id: "1",
+                    category: "0",
+                    contact_status: "0",
+                    text: "You're rock!! cancel that !!!!!!",
+                },
+                {
+                    contact_id: "2",
+                    user_id: "1",
+                    category: "1",
+                    contact_status: "0",
+                    text: "You're rock!! cancel that !!!!!! WHAT A HELL"
+                }
+            ]
+            )
